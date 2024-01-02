@@ -127,7 +127,6 @@ h2{
 .sectionDeux {
     display: flex;
     justify-content: space-between;
-    /* background-color:rgb(115, 71, 218); */
     margin-top: var(--marge-superieur-section);
 }
 .sectionDeux .unesco .unescoImg img{
@@ -151,7 +150,6 @@ h2{
     justify-content: space-between;
     align-items: center;
     margin-top: var(--marge-superieur-section);
-    /* background-color: rgb(178, 127, 224); */
 }
 .sectionTrois .martinezImg img {
     width: 900px;
@@ -169,7 +167,6 @@ h2{
     flex-direction: column;
     justify-content:center;
     margin-top: var(--marge-superieur-section);
-    /* background-color: rgb(224, 172, 94); */
     height: 600px;
 }
 .canalMatinImg {
@@ -215,7 +212,6 @@ h2{
 .sectionCinq{
     display: flex;
     justify-content: space-between;
-    /* background-color:rgb(218, 144, 202); */
     margin-top: var(--marge-superieur-section);
 }
 .sectionCinq .nousChezVous .nousChezVousImg img{
@@ -246,7 +242,6 @@ h2{
     flex-direction: column;
     justify-content:center;
     margin-top: var(--marge-superieur-section);
-    /* background-color: rgb(224, 172, 94); */
     height: 600px;
 }
 .textcComment {
@@ -309,7 +304,6 @@ h2{
 .sectionHuit {
     display: flex;
     justify-content: space-between;
-    /* background-color:rgb(115, 71, 218); */
     margin-top: var(--marge-superieur-section);
 }
 .sectionHuit .jackson .jacksonImg img{
