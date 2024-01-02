@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*creation de variables */
+:root {
+    --primary-color: #618264;
+    --list-color: black;
+    --bordures:10px;
+    --marge-superieur-section:40px
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+/*entete du site de presse*/
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin: auto;
+}
+
+button {
+    background-color: var(--primary-color);
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+ 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+nav li {
+    margin-right:30px;
+    color:var(--list-color);
+}
+.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/*section une de la page nganou*/
+.sectionUne {
+    display: flex;
+    width: 100vw;
+    height: 650px;
+    margin-top: var(--marge-superieur-section);
+}
+.imageNganou {
+    background-image:linear-gradient(to top,#000000,#12111133), url(images/Francis-Ngannou-domine-Ciryl-Gane.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 622px;
+    border-radius: var(--bordures);
+    margin-left: 130px;
+    margin-right: 60px;
+    display: flex;
+    align-items: flex-end;
+}
+.titreNganou {
+    border-left: 15px solid var(--primary-color);
+    padding-left: 15px;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    font-family:IBM Plex Sans Hebrew;
+}
+.actu {
+    font-size: 14px;
+    font-family:IBM Plex Sans Hebrew;
+    line-height: 26px;
+}
+.infosComplementaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 841px;
+    height: 622px;
+}
+.titreAside {
+    border-left: 8px solid var(--primary-color);
+    padding: 10px;
+    text-transform:uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    font-family:IBM Plex Sans Hebrew;
+}
+.aside{
+    display: flex;
+    justify-content: space-between;
+}
+.aside img {
+    border-radius: var(--bordures);
+    margin-right: 15px;
+}
+.aisde .text span{
+    width: 201px;
+    height: 52px;
+}
+p {
+    margin-right: 100px;
+}
+h2{
+    font-size: 20px;
+}
+/*section deux de la page*/
+.sectionDeux {
+    display: flex;
+    justify-content: space-between;
+    /* background-color:rgb(115, 71, 218); */
+    margin-top: var(--marge-superieur-section);
+}
+.sectionDeux .unesco .unescoImg img{
+    border-radius: var(--bordures);
+    margin-left: 130px;
+}
+.sectionDeux .unesco .texteUnesco{
+    margin-left: 130px;
+}
+.sectionDeux .franckBiya .franckBiyaImg img{
+    border-radius: var(--bordures);
+}
+.sectionDeux .aboubakar .aboubakarImg img{
+    border-radius: var(--bordures);
+    margin-right: 80px;
+}
+/*section trois de la page*/
+.sectionTrois {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--marge-superieur-section);
+    /* background-color: rgb(178, 127, 224); */
+}
+.sectionTrois .martinezImg img {
+    width: 900px;
+    height: 500px;
+    border-radius: var(--bordures);
+}
+.sectionTrois .actualites {
+    font-size:48px ;
+    font-family:IBM Plex Sans Hebrew;
+    margin-bottom: 40px;
+}
+/*section quatre de la page*/
+.sectionQuatre {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: var(--marge-superieur-section);
+    /* background-color: rgb(224, 172, 94); */
+    height: 600px;
+}
+.canalMatinImg {
+    margin-left: 130px;
+}
+.canalMatinImg img{
+    width: 600px;
+    height: 471px;
+    border-radius: var(--bordures);
+}
+.sectionQuatre .programme {
+    font-size:48px;
+    font-family:IBM Plex Sans Hebrew;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.canalMatin{
+    display: flex;
+}
+.canalMatin .textCanalMatin {
+    margin-left:40px;
+    font-size: 24px;
+    font-family: IBM Plex Sans Hebrew;
+}
+.canalMatin .textCanalMatin .titreCanalMatin {
+  font-size: 48px;
+  line-height: 62px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  border: 4px solid white;
+  padding: 15px;
+}
+.icones {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 450px;
+}
+.lorem {
+    font-family:Open Sans;
+}
+
+/*section cinq de la page*/
+.sectionCinq{
+    display: flex;
+    justify-content: space-between;
+    /* background-color:rgb(218, 144, 202); */
+    margin-top: var(--marge-superieur-section);
+}
+.sectionCinq .nousChezVous .nousChezVousImg img{
+    border-radius: var(--bordures);
+    margin-left: 130px;
+    margin-top: 80px;
+}
+.sectionCinq .nousChezVous  .texteNousChesVous{
+    margin-left: 130px;
+    margin-top: 80px;
+}
+.sectionCinq .arene .areneImg img{
+    border-radius: var(--bordures);
+}
+.sectionCinq .comediePresse .comediePresseImg img{
+    border-radius: var(--bordures);
+    margin-right: 80px;
+}
+.programmeEmission {
+    font-size: 12px;
+    color:var(--primary-color);
+    font-family: inter;
+}
+
+/*section six de la page*/
+.sectionSix {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: var(--marge-superieur-section);
+    /* background-color: rgb(224, 172, 94); */
+    height: 600px;
+}
+.textcComment {
+    margin-left: 130px;
+}
+.cCommentImg img{
+    width: 600px;
+    height: 471px;
+    border-radius: var(--bordures);
+}
+.cComment{
+    display: flex;
+}
+.cComment .textcComment{
+    font-size: 24px;
+    font-family: IBM Plex Sans Hebrew;
+}
+.cComment .textcComment .titrecComment {
+  font-size: 48px;
+  line-height: 62px;
+  color: var(--primary-color);
+  
+}
+.icones {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 450px;
+}
+.lorem {
+    font-family:Open Sans;
+}
+/*section sept de la page*/
+.sectionSept {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--marge-superieur-section);
+}
+.ligne{ 
+    width: 45px;
+    height: 13px;
+    border: 7px solid var(--primary-color);
+    transform: rotate(90deg);
+    margin:25px;
+}
+.titrePublicite {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 48px;
+}
+.publicite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+
+}
+/*section huit */
+.sectionHuit {
+    display: flex;
+    justify-content: space-between;
+    /* background-color:rgb(115, 71, 218); */
+    margin-top: var(--marge-superieur-section);
+}
+.sectionHuit .jackson .jacksonImg img{
+    border-radius: var(--bordures);
+    margin-left: 130px;
+}
+.sectionHuit .jackson .texteJackson{
+    margin-left: 130px;
+}
+.titre1 {
+    font-family: inter;
+    font-size: 12px;
+    font-style: italic;
+}
+.titre2 {
+    font-family: IBM Plex Sans Hebrew;
+    font-size: 24px;
+}
+
+/*pied de page*/
+
+footer{
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 300px;
+    margin-top: var(--marge-superieur-section);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imageIcones {
+    display: flex;
+    justify-content: space-between;
+}
+.imageIcones img{
+    padding:20px;
+}
+
+
