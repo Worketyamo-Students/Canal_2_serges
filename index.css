@@ -288,6 +288,7 @@ h2{
 }
 .titrePublicite {
     writing-mode: vertical-rl;
+    transform: rotate(180deg);
     text-orientation: sideways;
     text-transform: uppercase;
     color: var(--primary-color);
