@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*creation de variables */
 :root {
@@ -8,195 +8,403 @@
     --list-color: black;
     --bordures:1.25rem;
     --marge-superieur-section:2.5rem;
-    --margin-left-bloc:1.5rem;
-    --margin-right-bloc:4rem;
+    --police-IBM:IBM Plex Sans Hebrew;
+    --police-OpenSans: Open Sans;
+    --police-Inter:Inter;
+    --secodary-color:#79AC78;
 }
 
-body {
-    overflow-x: hidden; /*permet de faire disparaitre la barre de defilement horizontale*/
-    box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-.bloc_principale {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(188, 162, 204);
-    width: 100vw;
+html{
+    font-size: 14px;
 }
 
-/*Entete de la page*/
-.entete {
+ body {
+    overflow-x: hidden;           /*permet de faire disparaitre la barre de defilement horizontale*/
+    box-sizing: border-box;      /*La propriété CSS box-sizing définit la façon dont la hauteur et 
+    la largeur totale d'un élémentest calculée. border-box indique au navigateur de prendre en compte la 
+    bordure et le remplissage(padding) dans la valeur définie pour la largeur et la hauteur. Autrement dit, si on 
+    définit un élément avec une largeur de 100 pixels, ces 100 pixels inclueront la bordure et le remplissage 
+    éventuellement ajoutés et c'est le contenu de la boîte qui sera compressé pour absorber cette largeur 
+    supplémentaire. Cela permet généralement de simplifier le dimensionnement des éléments.*/
+    margin-left: 2rem;
+    margin-right: 4rem;
+ }
+/*----------------------------------------------------------------------------------------------------------------------------*/
+ /*Entete de la page*/
+ header {
     display: flex;
     justify-content: space-between;
-    margin-left: var(--margin-left-bloc);
-    margin-right: var(--margin-right-bloc);
-    background-color: yellow;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
+ }
 nav ul {
     display: flex;
     list-style-type: none;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 nav li {
-    margin-right:1.875rem;
+    margin-right:2.1rem;
     color:var(--list-color);
 }
-
-a{
+nav li a {
     text-decoration: none;
-    color:black;
+    color: #000;
 }
-
 .active {
     color: var(--primary-color);
-    border-bottom: 0.125rem solid var(--primary-color);
+    border-bottom: 0.14rem solid var(--primary-color);
 }
-
-button {
-    background-color: var(--primary-color);
-    color: white;
-    width: 9.3rem;
-    height: 3.12rem;
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
-} 
-
-/*section une de la page*/
-.sectionUne {
+.bouton-lien {
+  background-color: var(--primary-color);
+  border: 0.2px solid var(--primary-color);
+  padding: 0.28rem;
+  padding-top: 0.7rem;
+  color: #fff;
+  font-family: inter;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 9rem;
+  height: 2.5rem;
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*article sur le combat de francis nganou*/
+.article_nganou {
     display: flex;
     justify-content: space-between;
-    margin-right: var(--margin-right-bloc);
-    margin-left: var(--margin-left-bloc);
     width: 100%;
-    height: 39.375rem;
-    padding-right: 0.625rem;
+    height: 48rem;
     margin-top: var(--marge-superieur-section);
-    background-color: rgb(128, 197, 165);
-} 
-.imageNganou {
-    display: flex;
-    align-items: flex-end;
-    background-image:linear-gradient(to top,#000000,#12111133), url(images/Francis-Ngannou-domine-Ciryl-Gane.png); 
+}
+.arcticle_sur_nganou {
+    background-image:linear-gradient(10.82deg, rgba(0, 0, 0, 0.95) 1.55%, rgba(0, 0, 0, 0) 51.18%),url("images/Francis-Ngannou-domine-Ciryl-Gane.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: var(--bordures);
-    width: 52.75rem;
-    height: 38.875rem;
-    margin-right: auto;
+    width: 60rem;
+    height: 44rem;
+    display: flex;
+    align-items: flex-end;
 }
-.titreNganou {
-    border-left: 15px solid var(--primary-color);
-    padding-left: 15px;
-    margin: 20px;
-    font-size: 40px;
+.arcticle_sur_nganou h1 {
+    border-left: 1.07rem solid var(--primary-color);
+    padding-left: 1.07rem;
+    margin:1.5rem;
+    font-size: 2.9rem;
+    font-weight: 700;
     color: white;
-    font-family:IBM Plex Sans Hebrew;
+    font-family:var(--police-IBM);
 }
-.actu {
-    font-size: 14px;
-    font-family:IBM Plex Sans Hebrew;
-    line-height: 26px;
+
+.arcticle_sur_nganou .actu {
+    font-size: 1.42rem;
+    font-weight: 400;
 }
-.infosComplementaires {
+.infos_complementaires {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    width: auto;
-    background-color: red;
-}
-.titreAside {
-    border-left: 8px solid var(--primary-color);
-    text-transform:uppercase;
-    font-size: 20px;
-    line-height: 26px;
-    font-family:IBM Plex Sans Hebrew;
-    padding-left: 10px;
-    margin-top: 1px;
-    margin-left: 10px;
-}
-.aside{
-    display: flex;
-    justify-content: space-between;
-    height: 300px;
-}
-.aside img {
-    border-radius: var(--bordures);
-    margin-right: 15px;
-    width: 180px;
-    height: 170px;
-    padding: 10px;
-}
-.aisde .text span{
-    width: 120px;
-    height: 40px;
-}
-p {
-    margin-right: 100px;
-}
-h2{
-    font-size: 20px;
+    margin-left: 4%;
+    width: 100%;
+    height:44rem;
 }
 
-/*section deux de la page*/
-.sectionDeux {
+.titre_aside {
+    border-left: 0.6rem solid var(--primary-color);
+    padding: 0.7rem;
+    text-transform:uppercase;
+    height: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family:IBM Plex Sans Hebrew;
+    margin-bottom: 0%;
+}
+.img_aside1 {
     display: flex;
     justify-content: space-between;
-    margin-right: var(--margin-right-bloc);
-    margin-left: var(--margin-left-bloc);
+}
+.img_aside1 img {
+    border-radius: 0.7rem;
+    width: 45%;
+    height: auto;
+}
+.text_aside1 a{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--police-IBM);
+    text-decoration: none;
+    color: #000;
+}
+.text_aside1 p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--police-OpenSans);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*article sur unesco, franck biya et aboubakar*/
+.artcile_deux {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25rem;
     margin-top: var(--marge-superieur-section);
-    background-color: rgb(137, 137, 219);
 }
-.sectionDeux .unesco .unescoImg img{
+.article_unesco img {
+    width: 18rem;
+    height: 19rem;
     border-radius: var(--bordures);
-    width: 300px;
-    height: 300px;
 }
-.sectionDeux .franckBiya .franckBiyaImg img{
-    border-radius: var(--bordures);
-    width: 300px;
-    height: 300px;
-}
-.sectionDeux .aboubakar .aboubakarImg img{
-    border-radius: var(--bordures);
-    width: 300px;
-    height: 300px;
-}
-.titreUnesco1{
-    font-family: inter;
-    font-size: 12px;
+.article_unesco span {
+    font-size: 0.9rem;
+    font-weight: 400;
     font-style: italic;
+    font-family: var(--police-Inter);
     color: var(--primary-color);
 }
-.titreUnesco2{
-    font-family: IBM Plex Sans Hebrew;
-    font-size: 24px;
-}  
+.article_unesco a {
+    font-size: 1.7rem;
+    font-family: var(--police-IBM);
+    font-weight: 600;
+    color: #000E01;
+    text-decoration: none;
+}
 
- /*section trois de la page*/
-.sectionTrois {
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*section de page sur affaire martinez zogo*/
+.martinez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    margin-top: var(--marge-superieur-section);
+}
+.martinez h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: var(--police-IBM);
+    margin-bottom: 4%;
+}
+.martinez img {
+    width: 70rem;
+    height: 40rem;
+    border-radius: var(--bordures);
+}
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*section sur les programmes preferes*/
+/*section canal matin*/
+.programmes_preferres {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height:115rem;
     margin-top: var(--marge-superieur-section);
 }
-.sectionTrois .martinezImg img {
-    width: 56.25rem;
-    height: 31.25rem;
+
+.prog_prefere {
+    font-size: 3.42rem;
+    font-weight: 600;
+    font-family: var(--police-IBM);
+}
+.canal_matin {
+    display:flex;
+    width: 100%;
+    height: 30.6rem;
+}
+.img_canal_matin {
+     background-image: url(images/canal_matin.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     border-radius: var(--bordures);
+     width: 51.3rem;
+     height: 30.6rem;
+     flex: 1;
+}
+.texte_canal_matin {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2.5rem 2.5rem;
+}
+.texte_canal_matin h2 {
+    font-size: 3.43rem;
+    font-family: var(--police-IBM);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.texte_canal_matin p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: var(--police-OpenSans);
+}
+.texte_canal_matin span {
+    width: 17rem;
+    display:flex;
+    justify-content: space-between;
+}
+/*section section nous chez vous*/
+.nous_chezVous {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30.6rem;
+    margin-top: var(--marge-superieur-section);
+}
+.emission_nous_chezVous  span,.emission_arene span,.emission_comedie_presse span{
+    font-size: 0.92;
+    font-weight: 400;
+    font-family: var(--police-Inter);
+    font-style: italic;
+    color:#79AC78;
+}
+.emission_nous_chezVous  a,.emission_arene a,.emission_comedie_presse a{
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: var(--police-IBM);
+    text-decoration: none;
+    color: #000;
+ }
+.emission_arene img,.emission_comedie_presse img {
+    border-radius: var(--bordures);
+ }
+ .emission_nous_chezVous img {
+    width: 14rem;
+    height: 15rem;
+    padding: 35%;
+ }
+ /*section section c'est comment*/
+ .cComment {
+    display: flex;
+    width: 100%;
+    height: 30.6rem;
+ }
+
+ .texte_cComment {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2.5rem 2.5rem;
+ }
+ .img_cComment {
+    background-image: url("images/cComment.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    width: 51.3rem;
+    height: 30.6rem;
+    border-radius: var(--bordures);
+ }
+ .texte_cComment h2 {
+    font-size: 3.43rem;
+    font-family: var(--police-IBM);
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+.texte_cComment P{
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-family: var(--police-OpenSans);
+}
+.texte_cComment span {
+    width: 17rem;
+    display:flex;
+    justify-content: space-between;
+}
+/*section publicité*/
+.image_Publicitaire {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:41rem;
+    margin-top: var(--marge-superieur-section);
+}
+.publiciteImg {
+    background-image: url("images/publicite.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: right;
+    width: 100%;
+    height: 39rem;
+}
+.ligne{ 
+    border: 0.42rem solid var(--primary-color);
+    width: 1.5rem;
+    transform: rotate(90deg);
+}
+.titrePublicite {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size:3.3rem;
+}
+.publicite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 39rem;
+}
+
+/*standard lorem ipsum*/
+.standard_lorem {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 28rem;
+    margin-top: var(--marge-superieur-section);
+}
+.lorem_Ipsum  img {
+    width: 24rem;
+    height: 21rem;
     border-radius: var(--bordures);
 }
-.sectionTrois .actualites {
-    font: size 3rem;
-    font-family:IBM Plex Sans Hebrew;
-    margin-bottom: 2.5rem;
-}    
-
+.lorem_Ipsum span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--police-Inter);
+    color: var(--primary-color);
+}
+.lorem_Ipsum a {
+    font-size: 1.7rem;
+    font-family: var(--police-IBM);
+    font-weight: 600;
+    color: #000E01;
+    text-decoration: none;
+}
+/*footer: pied de page*/
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+    height:21.42rem;
+    margin-top:var(--marge-superieur-section);
+    background-color: var(--primary-color);
+}
+.logo2 img {
+    width: 15.21rem;
+    height: 15.21rem;
+}
+.imageFooter {
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}

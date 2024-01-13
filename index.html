@@ -6,122 +6,241 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-         <div class="bloc_principale">
-            <!-- Entete de la page-->
-            <header class="entete">
+        <header>
+            <div class="logo_canal2">
+                <img src="images/logoCanal2.png" alt="logo canal2">
+            </div>
 
-                <div class="logo">
-                    <img src="images/logoCanal2.png" alt="logo canal2">
+            <nav>
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a  class="active" href="#">Actualités</a></li>
+                    <li><a href="#">Programme</a>s</li>
+                    <li><a href="#">Direct</a></li>
+                </ul>
+            </nav>
+            
+                <a class="bouton-lien" href="#">Premium</a>
+        </header>
+
+        <!--article sur le combat de francis nganou-->
+        <article  class="article_nganou">
+            <div class="nganou">
+                <div class="arcticle_sur_nganou">
+                    <h1 class="titreNganou">
+                        Il tape les gens pour vivre, francis Nganou <br>
+                        <span class="actu">Actu du 23 decembre 2023</span>   
+                    </h1>
+                </div> 
+            </div>
+             <div class="infos_complementaires">
+                <h1 class="titre_aside">
+                    a la une du jour
+                </h1>
+                <aside>
+                    <div class="img_aside1">
+                        <img src="images/aside1.png" alt="ecole primaire melong">
+
+                        <div class="text_aside1">
+                            <a href="#">L'ecole primaire de <br>melong dans le choc</a><br><br>
+                            <p>
+                                Lundi matin le sous-prefet du <br>nyong-ekele est  partie en viste <br>
+                                dans son village natale...
+                            </p>
+                        </div>
+                    </div>           
+                </aside>
+                <aside>
+                    <div class="img_aside1">
+                        <img src="images/aside2.png" alt="baisse des prix">
+
+                        <div class="text_aside1">
+                            <a href="#">Manifestation<br>pour la baisse des prix</a><br><br>
+                            <p>
+                                Lundi matin le sous-prefet du <br>nyong-ekele est  partie en viste <br>
+                                dans son village natale...
+                            </p>
+                        </div>
+                    </div>           
+                </aside>
+                <aside>
+                    <div class="img_aside1">
+                        <img src="images/aside3.png" alt="baisse des prix">
+
+                        <div class="text_aside1">
+                            <a href="#">Bientot un metro<br>dans la capitale</a><br><br>
+                            <p>
+                                Lundi matin le sous-prefet du <br>nyong-ekele est  partie en viste <br>
+                                dans son village natale...
+                            </p>
+                        </div>
+                    </div>           
+                </aside>
+        </article>
+
+         <!--deuxieme article de notre site de presse-->
+         <article class="artcile_deux">
+            <article class="article_unesco">
+                <img src="images/unesco.png" alt="image unesco"><br>
+                <span>
+                    Mardi, 10 janvier 2025 10h30
+                </span><br>
+                <a href="#"> lutte contre le travail des<br> enfants l'UNESCO réagit</a>
+            </article>
+            <article class="article_unesco">
+                <img src="images/franckBiya.png" alt="image franckBiya"><br>
+                <span>
+                    Mardi, 10 janvier 2025 10h30
+                </span><br>
+                <a href="#"> The Game of Throne, Qui<br>sera le prochain??</a>
+            </article>
+            <article class="article_unesco">
+                <img src="images/aboubakar.png" alt="image aboubakar"><br>
+                <span>
+                    Mardi, 10 janvier 2025 10h30
+                </span><br>
+                <a href="#"> Le lion sort de sa cage et<br> s'exprime à la CAN</a>
+            </article>
+         </article>
+
+         <!-- Section de page sur martinez zogo-->
+         <section class="martinez">
+            <h2>
+                Suivez l'actualité en direct sur canal 2 international
+            </h2>
+            <img src="images/martinez.png" alt="martinez zogo">
+         </section>
+
+          <!-- Section sur les programmes préferrés-->
+          <section class="programmes_preferres">
+                <h2 class="prog_prefere">
+                    Retrouvez vos programmes préférés
+                </h2>
+                <!-- section canal matin-->
+                <section class="canal_matin">
+                    <div class="img_canal_matin">
+                        
+                    </div>
+
+                    <div class="texte_canal_matin">
+                        <h2>
+                         canal matin
+                        </h2><br><br>
+                        <p>
+                            lorem ipsum dolor sit amet, consectetur <br> adipiiscing elit sed to eiusmod tempor
+                            inciddidunt <br>ut labore et dolore magna aliqua, ut enim ad <br> minim veniam ques 
+                            nostrud.<br><br>du lundi au vendredi sur canal2 internattional.
+                        </p><br><br>
+
+                         <span>
+                            <a href="#"><img src="images/🦆 icon _rounded instagram_.png" alt="logo instagram"></a>
+                            <a href="#"><img src="images/🦆 icon _circle facebook_.png" alt="logo facebook"></a>
+                            <a href="#"><img src="images/🦆 icon _twitterbird_.png" alt="logo _twitterbird"></a>
+                            <a href="#"><img src="images/🦆 icon _rounded linkedin_.png" alt="log linkedin"></a>
+                         </span>
+                    </div>
+            </section>
+             <!-- section nous chez vous et comedie presse-->
+             <section class="nous_chezVous">
+                <div class="emission_nous_chezVous">
+                    <img src="images/nousChezVous.png" alt="nous chez vous"><br>
+                    <span>
+                        du lundi au vendredi
+                    </span><br>
+                    <a href="#">NOUS CHEZ VOUS</a>
                 </div>
-    
-                <nav>
-                    <ul>
-                        <li><a href="#">Acceuil</a></li>
-                        <li class="active"><a href="#">Atualites</a></li>
-                        <li><a href="#">Programmes</a></li>
-                        <li><a href="#">Direct</a></li>
-                    </ul>
-                </nav>
-                <a class="premium" href="#"><button>Premium</button></a>
-            </header>
 
-            <!-- premiere  section de la page-->
-                <section class="sectionUne">
-                <div class="imageNganou">
-                        <h1 class="titreNganou">
-                            Il tape les gens pour vivre, francis Nganou <br>
-                            <span class="actu">Actu du 23 decembre 2023</span>   
-                        </h1>
+                <div class="emission_arene">
+                    <img src="images/min_arene 1.png" alt="arene"><br>
+                    <span>
+                        du lundi au vendredi
+                    </span><br>
+                    <a href="#">L’ARENE par Rodrigue Tongue</a>
                 </div>
-                    <div class="infosComplementaires">
-                        <h1 class="titreAside">
-                            A la une du jour
-                        </h1>
-                                <div class="aside">
-                                    <div class="image1">
-                                        <img src="images/aside1.png" alt="">
-    
-                                    </div>
-                                    <div class="text"> 
-                                            <h2><a href="#">L'ecole primaire de <br>melong dans le choc</a></h2>
-                                            <p>
-                                                Lundi matin le sous-prefet du <br>nyong-ekele est  partie en viste <br>
-                                                dans son village natale...
-                                            </p>
-                                    </div>
-                                </div>
-    
-                                <div class="aside">
-                                    <div class="image2">
-                                        <img src="images/aside2.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                            <h2> <a href="#">Manifestation pour <br>la baisse des prix</a> </h2>
-                                            <p>
-                                                Lundi matin le sous-prefet du <br>nyong-ekele est  partie en viste <br>
-                                                dans son village natale...
-                                            </p>
-                                    </div>
-                                </div>
-    
-                                <div class="aside">
-                                    <div>
-                                        <img src="images/aside3.png" alt="">
-                                    </div>
-                                    <div class="texte">
-                                            <h2><a href="#">Bientot un metro <br>dans la capitale</a></h2>
-                                            <p>
-                                                Lundi matin le sous-prefet du <br>nyong-ekele est  partie en viste <br>
-                                                dans son village natale...
-                                            </p>
-                                    </div>  
-                                </div>
-                </div>           
-                </section>
 
-                <!-- deuxieme section de la page-->
-                <section class="sectionDeux">
+                <div class="emission_comedie_presse">
+                    <img src="images/min_comedie_presse 1.png" alt="comedie presse"><br>
+                    <span>
+                        du lundi au vendredi
+                    </span><br>
+                    <a href="#">COMEDIE PRESSE</a>
+                </div>
+             </section>
+             <!-- section c'est comment-->
+             <section class="cComment">
+                 <div class="texte_cComment">
+                    <h2>
+                        c'est Comment
+                    </h2><br><br>
+                    <p>
+                           lorem ipsum dolor sit amet, consectetur <br> adipiiscing elit sed to eiusmod tempor
+                           inciddidunt <br>ut labore et dolore magna aliqua, ut enim ad <br> minim veniam ques 
+                           nostrud.<br><br>du lundi au vendredi sur canal2 internattional.
+                    </p><br><br>
 
-                    <div class="unesco">
+                        <span>
+                           <a href="#"><img src="images/🦆 icon _rounded instagram_.png" alt="logo instagram"></a>
+                           <a href="#"><img src="images/🦆 icon _circle facebook_.png" alt="logo facebook"></a>
+                           <a href="#"><img src="images/🦆 icon _twitterbird_.png" alt="logo _twitterbird"></a>
+                           <a href="#"><img src="images/🦆 icon _rounded linkedin_.png" alt="log linkedin"></a>
+                        </span>
+                 </div>
 
-                        <div class="unescoImg">
-                            <img width="300" height="253" src="images/unesco.png" alt="">
-                        </div>
+                 <div class="img_cComment">     
+                 </div>
 
-                        <div class="texteUnesco">
-                            <h3 class="titreUnesco1">Mardi, 10 janvier 2025 10:30</h3>
-                            <h3><a class="titreUnesco2"  href="#">lutte contre le travail des <br>enfants l'UNESCO réagit</a></h3>
-                        </div>
+             </section>
+          </section>
 
-                    </div>
+          <!-- section publicité-->
+          <section class="image_Publicitaire">
+            <div class="publicite">
+                <hr class="ligne">
+                <h1 class="titrePublicite">Espace publicite</h1>
+                <hr class="ligne">
+            </div>
+            <div class="publiciteImg">  
+                
+            </div>
+         </section>
 
-                    <div class="franckBiya">
-                        <div class="franckBiyaImg">
-                            <img width="300" height="253" src="images/franckBiya.png" alt="">
-                        </div>
-                        <div class="texteFranckBiya">
-                            <h3><h3 class="titreUnesco1">Mardi, 10 janvier 2025 10:30</h3>
-                            <h3><a class="titreUnesco2" href="#">The Game of Throne , <br>qui sera le prochain??</a></h3>
-                        </div>
-                    </div>
+          <!-- section standard lorem ipsum-->
+          <section class="standard_lorem">
+            <div class="lorem_Ipsum">
+                <img src="images/jackson-david-1.png" alt="photo jackson-david"><br>
+                <span>
+                    Mardi, 10 janvier 2025 10:30
+                </span><br>
+                <a href="#">The standard Lorem, Ipsum <br>passage used since the 1500s</a>
+            </div>
 
-                    <div class="aboubakar">
-                        <div class="aboubakarImg">
-                            <img width="300" height="253" src="images/aboubakar.png" alt="">
-                        </div>
-                        <div class="texteAboubakar">
-                            <h3><h3 class="titreUnesco1">Mardi, 10 janvier 2025 10:30</h3>
-                            <h3><a  class="titreUnesco2" href="#">Le lion sort de sa cage et <br>s'exprime à la CAN</a></h3>
-                        </div>
-                    </div>
-                </section>
-                <!-- troisieme section de la page-->
-                <section class="sectionTrois">
-                    <h1 class="actualites">Suivez l'actualité en direct sur canal 2 international</h1>
-                    <div class="martinezImg">
-                        <img width="1120" height="623" src="images/martinez.png" alt="">
-                    </div>
-                </section>
-         </div>
+            <div class="lorem_Ipsum">
+                <img src="images/jackson-david-2.png" alt="photo jackson-david"><br>
+                <span>
+                    Mardi, 10 janvier 2025 10:30
+                </span><br>
+                <a href="#">The standard Lorem, Ipsum <br>passage used since the 1500s</a>
+            </div>
+
+            <div class="lorem_Ipsum">
+                <img src="images/jackson-david-2.png" alt="photo jackson-david"><br>
+                <span>
+                    Mardi, 10 janvier 2025 10:30
+                </span><br>
+                <a href="#">The standard Lorem, Ipsum <br>passage used since the 1500s</a>
+            </div>
+          </section>
+        <!-- pied de page-->
+        <footer>
+            <div class="logo2">
+                <img src="images/logo2.png" alt="logo canal2">
+            </div>
+            <span class="imageFooter">
+                <a href="#"><img src="images/🦆 icon _rounded instagram_.png" alt="logo instagram"></a>
+                <a href="#"><img src="images/🦆 icon _circle facebook_.png" alt="logo facebook"></a>
+                <a href="#"><img src="images/🦆 icon _twitterbird_.png" alt="logo _twitterbird"></a>
+                <a href="#"><img src="images/🦆 icon _rounded linkedin_.png" alt="log linkedin"></a>
+            </span>
+        </footer>
     </body>
 </html>
